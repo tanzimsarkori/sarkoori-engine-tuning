@@ -97,6 +97,13 @@ svg{display:block;width:100%}
 
 
 
+/* brand name next to header logo */
+.brand-text{display:flex;flex-direction:column;line-height:1.3}
+.brand-text strong{font-size:16px;color:#fff;font-weight:900}
+.brand-text strong em{font-style:normal;color:var(--red)}
+.brand-text small{font-size:9px;color:#98aaa4;letter-spacing:.3px;margin-top:2px}
+@media(max-width:560px){.brand-text small{display:none}.brand-text strong{font-size:13px}}
+
 /* Featured promo banner */
 .banner-showcase{padding-top:10px}
 .poster-card{position:relative;padding:18px;border-radius:28px;background:linear-gradient(145deg,rgba(5,22,17,.98),rgba(10,36,29,.96));border:1px solid rgba(255,171,58,.28);box-shadow:0 20px 60px rgba(0,0,0,.28), inset 0 0 0 1px rgba(255,255,255,.03);overflow:hidden}
@@ -183,6 +190,7 @@ svg{display:block;width:100%}
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="تنظیم موتور سرکوری">
         <img class="brand-logo brand-logo-header" src="sarkoori-logo.png" alt="لوگوی تنظیم موتور سرکوری">
+        <span class="brand-text"><strong>تنظیم موتور <em>سرکوری</em></strong><small>دیاگ تخصصی و تنظیم موتور</small></span>
       </a>
 
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav">
