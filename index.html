@@ -180,6 +180,22 @@ svg{display:block;width:100%}
 @media(max-width:1100px){.shop-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:820px){.shop-grid{grid-template-columns:repeat(2,1fr)}.product-media{height:150px}.header-call{display:none}}
 @media(max-width:520px){.shop-grid{grid-template-columns:1fr}.product-media{height:170px}.product-actions{flex-direction:column}}
+
+.videos{background:#fff}
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
+.video-card{background:#fff;border:1px solid #e0e5e1;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:.3s}
+.video-card:hover{transform:translateY(-6px);box-shadow:0 22px 45px rgba(22,54,43,.1);border-color:rgba(13,121,93,.25)}
+.video-media{height:200px;background:#0b241e;position:relative;overflow:hidden;display:grid;place-items:center}
+.video-media video{width:100%;height:100%;object-fit:cover;display:block;background:#000}
+.video-badge{position:absolute;top:12px;right:12px;background:var(--red);color:#fff;font-size:10px;font-weight:900;padding:5px 10px;border-radius:999px;z-index:2}
+.video-placeholder{color:#9fb2ac;font-size:13px;text-align:center;padding:0 18px;line-height:1.8}
+.video-body{padding:18px 18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.video-cat{font-size:10px;color:#7d8f88;font-weight:800}
+.video-card h3{font-size:16px;margin:0;line-height:1.6}
+.video-card p{font-size:12px;color:#71807a;margin:0;line-height:1.9;flex:1}
+@media(max-width:1000px){.video-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.video-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -202,6 +218,7 @@ svg{display:block;width:100%}
         <a href="#services">خدمات</a>
         <a href="#diagnosis">عیب‌یابی</a>
         <a href="#shop">فروشگاه</a>
+        <a href="#videos">فیلم آموزشی</a>
         <a href="#about">چرا سرکوری؟</a>
         <a href="#booking">رزرو نوبت</a>
         <a href="#contact">تماس</a>
@@ -631,6 +648,21 @@ svg{display:block;width:100%}
 
         <div class="shop-note reveal">
           خرید اینترنتی: محصولات را به سبد اضافه کنید، سپس از دکمه سبد خرید بالا «تکمیل خرید در واتساپ» را بزنید. قیمت‌ها تقریبی است و پس از تأیید موجودی و مدل خودرو نهایی می‌شود.
+        </div>
+      </div>
+    </section>
+
+    <section class="section videos" id="videos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="kicker">ویدیوهای آموزشی</span><h2>فیلم‌های آلموزشی تنظیم موتور</h2></div>
+          <p>ویدیوهای راهنما برای عیب‌یابی، تنظیم موتور و نگهداری خودرو در این بخش قرار می‌گیرند.</p>
+        </div>
+        <div class="video-grid" id="video-grid">
+          <div class="video-card reveal">
+            <div class="video-media"><span class="video-badge">به‌زودی</span><div class="video-placeholder">🎬 ویدیوهای آموزشی به‌زودی اینجا قرار می‌گیرند</div></div>
+            <div class="video-body"><span class="video-cat">آموزشی</span><h3>در حال آماده‌سازی</h3><p>پس از دریافت فیلم‌ها، در این بخش نمایش داده می‌شوند.</p></div>
+          </div>
         </div>
       </div>
     </section>
